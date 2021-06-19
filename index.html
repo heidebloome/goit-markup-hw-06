@@ -455,10 +455,19 @@
           </label>
           
 
-          <input type="checkbox" id="policy" class="policy-checkbox" required>
-          <label for="policy" class="modal-policy-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-
-          <!-- <button type="submit" class="submit-button">Отправить</button> -->
+          
+          <label for="policy" class="modal-policy-label">
+            <input type="checkbox" id="policy" class="policy-checkbox visually-hidden" required>
+            <div class="checkbox-icon-wrapper">
+              <svg class="icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </div>
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a>
+          </label>
+          
+          
+          <button type="submit" class="submit-button">Отправить</button>
         </form>
       </div>
     </div>
