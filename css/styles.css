@@ -894,6 +894,11 @@ img {
   border: none;
 }
 
+.policy-checkbox:checked:focus + .checkbox-icon-wrapper {
+  border: 1px solid red;
+  background-color: var(--accent-color);
+}
+
 .modal-policy-link {
   color: var(--accent-color);
   text-decoration: underline;
