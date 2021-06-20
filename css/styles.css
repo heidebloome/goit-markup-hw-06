@@ -879,6 +879,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
