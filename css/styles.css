@@ -812,13 +812,15 @@ img {
   transition: border-color var(--time) var(--cubic);
 }
 
-.modal-form-input:hover {
+.modal-form-input:hover,
+.modal-form-textarea:hover,
+.modal-policy-label:hover {
   cursor: pointer;
 }
+
 .modal-form-input:focus {
   border-color: var(--accent-color);
   outline: none;
-  cursor: pointer;
 }
 
 .modal-icon-wrapper {
@@ -835,10 +837,6 @@ img {
   fill: var(--heading-text-color);
 
   transition: fill var(--time) var(--cubic);
-}
-
-.modal-icon-wrapper .icon:hover {
-  cursor: pointer;
 }
 
 .modal-form-input:focus + .icon {
@@ -860,11 +858,6 @@ img {
 .modal-form-textarea:focus {
   border-color: var(--accent-color);
   outline: none;
-  cursor: pointer;
-}
-
-.modal-form-textarea:hover {
-  cursor: pointer;
 }
 
 .modal-form-textarea::placeholder {
@@ -883,7 +876,6 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .checkbox-icon-wrapper {
@@ -895,12 +887,16 @@ img {
   margin-right: 8px;
   border: 2px solid var(--heading-text-color);
   border-radius: 3px;
-  cursor: pointer;
 }
 
 .policy-checkbox:checked + .checkbox-icon-wrapper {
   background-color: var(--accent-color);
   border: none;
+}
+
+.modal-policy-link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .submit-button {
@@ -917,5 +913,12 @@ img {
   letter-spacing: 0.06em;
 
   color: var(--white-color);
+
+  transition: background-color var(--time) var(--cubic);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--hero-button-hover-color);
   cursor: pointer;
 }
